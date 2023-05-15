@@ -3,7 +3,7 @@ CREATE TABLE 'lecturer'(
     lecturer_name varchar(255) REFERENCES user(user_name),
     lecturer_surname varchar(255) REFERENCES user(user_surname),
     lecturer_department varchar(255) REFERENCES user(user_department),
-    lecturer_type varchar(255),
+    lecturer_type varchar(255) NOT NULL,
     classroom_id int REFERENCES classroom(classroom_id), 
     FOREIGN KEY (classroom_id)
 );
