@@ -1,0 +1,13 @@
+ CREATE TABLE 'replacement' (
+     replacement_id int NOT NULL UNIQUE ASCENDING,
+     lecturer_id int,
+     PRIMARY KEY(replacement_id),
+     FOREIGN KEY(lecturer_id) REFERENCES lecturer(lecturer_id)
+     replacement_submission_date DATETIME NOT NULL,
+     replacement_status int NOT NULL,
+     replacement_date varchar(6) NOT NULL,
+     replacement_initial int(6) NOT NULL,
+     replacement_classroom varchar(255) REFERENCES classroom(classroom_id),
+     replacement_time int(4) NOT NULL,
+     replacement_duration int NOT NULL
+  );
