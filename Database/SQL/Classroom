@@ -4,9 +4,9 @@ CREATE TABLE `classroom` (
   `classroom_building` varchar(255) NOT NULL,
   `classroom_address` int(11) NOT NULL,
   `classroom_capacity` int(11) NOT NULL,
-  `classroom_is_publicly_available` tinyint(1) DEFAULT NULL,
+  `classroom_is_publicly_available` tinyint(1) NOT NULL,
   `classroom_has_projector` tinyint(1) NOT NULL,
   `classroom_type` int(11) NOT NULL,
-  `classroom_available_hours` int(11) DEFAULT NULL,
-  `classroom_available_days` int(11) DEFAULT NULL
+  `classroom_available_hours` int(11) NOT NULL,
+  `classroom_available_days` int(11) NOT NULL
 )
